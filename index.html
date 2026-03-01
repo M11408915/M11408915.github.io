@@ -93,10 +93,10 @@
                         <a href="/cdn-cgi/l/email-protection#a9" class="text-white" id="email"></a>
                     </div>
                     <div class="mb-3">
-                        <strong>LinkedIn：</strong>
-                        <a href="" target="_blank" class="text-white" id="linkedin">
-                            <i class="fab fa-linkedin me-1"></i>
-                            <span id="linkedin-text"></span>
+                        <strong>Line：</strong>
+                        <a href="" target="_blank" class="text-white" id="line">
+                            <i class="fab fa-line me-1"></i>
+                            <span id="line-text"></span>
                             <i class="fas fa-external-link-alt ms-1"></i>
                         </a>
                     </div>
@@ -272,8 +272,8 @@
             document.getElementById('education').textContent = profileData.education;
             document.getElementById('email').textContent = profileData.email;
             document.getElementById('email').href = `mailto:${profileData.email}`;
-            document.getElementById('linkedin').href = profileData.linkedin;
-            document.getElementById('linkedin-text').textContent = profileData.linkedin;
+            document.getElementById('line').href = profileData.line;
+            document.getElementById('line-text').textContent = profileData.line;
             const aboutText = [profileData.about1, profileData.about2, profileData.about3, profileData.about4]
                 .filter(text => text && text.trim()) // Remove empty parts
                 .join(' ');

@@ -271,7 +271,7 @@
             document.getElementById('education').textContent = profileData.education;
             document.getElementById('email').textContent = profileData.email;
             document.getElementById('email').href = `mailto:${profileData.email}`;
-            document.getElementById('line').href = profileData.line;
+            document.getElementById('line').href = `https://line.me/ti/p/~${profileData.line}`;
             document.getElementById('line-text').textContent = profileData.line;
             const aboutText = [profileData.about1, profileData.about2, profileData.about3, profileData.about4]
                 .filter(text => text && text.trim()) // Remove empty parts

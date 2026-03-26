@@ -283,13 +283,18 @@
     }
 
     function drawSciFiSkeleton(hand, gx, gy) {
-      stroke(red(mainColor), green(mainColor), blue(mainColor), 80);
+      push();
+      colorMode(HSB, 360, 100, 100, 1);
+      strokeWeight(6); // 放大線條
       let connections = handPose.getConnections();
       for (let i = 0; i < connections.length; i++) {
         let a = connections[i][0], b = connections[i][1];
+        let hue = map(a, 0, 21, 0, 360);
+        stroke(hue, 100, 100, 0.75); // 讓線條顏色跟隨起始關節
         line(map(hand.keypoints[a].x, 0, 640, 0, width) + gx, map(hand.keypoints[a].y, 0, 480, 0, height) + gy,
           map(hand.keypoints[b].x, 0, 640, 0, width) + gx, map(hand.keypoints[b].y, 0, 480, 0, height) + gy);
       }
+      pop();
     }
 
     function drawHandPoints(hand, gx, gy) {
@@ -301,16 +306,16 @@
 
         let hue = map(i, 0, 21, 0, 360);
         // 設定高飽和的彩虹配色
-        fill(hue, 100, 100, 0.85);
+        fill(hue, 100, 100, 0.95);
         noStroke();
-        // 放大倍率：指尖端點給予 24px，其餘關節 16px
-        let r = (i % 4 === 0 && i !== 0) ? 24 : 16;
+        // 放大倍率：指尖端點給予 30px，其餘關節 22px
+        let r = (i % 4 === 0 && i !== 0) ? 30 : 22;
         circle(x, y, r);
 
         // 核心節點如食指(8)與中指(12)增加外圈動態脈衝光暈
         if (i === 8 || i === 12) {
-          noFill(); stroke(hue, 100, 100, 0.9); strokeWeight(3);
-          circle(x, y, r + 12 + sin(frameCount * 15) * 8);
+          noFill(); stroke(hue, 100, 100, 0.9); strokeWeight(4);
+          circle(x, y, r + 16 + sin(frameCount * 15) * 10);
         }
       }
       pop();

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戴資穎：球場魔術師的傳奇之路</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#0F172A',
+                            accent: '#38BDF8',
+                            surface: '#1E293B',
+                            red: '#EF4444'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F172A;
+            color: #F8FAFC;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #F8FAFC 0%, #38BDF8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
+        }
+        /* Media Restyling */
+        video, img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        audio {
+            width: 100%;
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header Section -->
+    <header class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 px-6">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/20 to-brand-dark z-10"></div>
+            <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-brand-accent/20 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-brand-gold/10 rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div class="relative z-20 text-center max-w-4xl animate-fade-in-up">
+            <span class="inline-block px-4 py-1 mb-6 text-sm font-bold tracking-widest uppercase border border-brand-accent/50 text-brand-accent rounded-full glass">
+                Badminton Legend
+            </span>
+            <h1 class="text-5xl md:text-8xl font-black font-display mb-6 tracking-tight">
+                戴資穎 <br><span class="gradient-text">Tai Tzu-ying</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">
+                台灣首位羽球女單世界球后，以「球場魔術師」之姿席捲世界羽壇，寫下長達 214 週的世界第一傳奇。
+            </p>
+        </div>
+    </header>
+
+    <!-- 1. Infographic Section (Bento Grid) -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold font-display flex items-center gap-3">
+                <span class="w-8 h-[2px] bg-brand-accent"></span>
+                資訊圖表：傳奇數據
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-auto gap-4">
+            <!-- Main Visual -->
+            <div class="md:col-span-2 md:row-span-2 glass rounded-3xl p-8 bento-card overflow-hidden relative">
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold mb-4">生涯摘要</h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-accent font-bold mt-1">●</span>
+                            創下史上最長球后在位週數 214 週紀錄。
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-accent font-bold mt-1">●</span>
+                            高超假動作 (Deception) 譽為「球場魔術師」。
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-accent font-bold mt-1">●</span>
+                            2024 年巴黎奧運後展開「最後舞曲」。
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-8 opacity-90">
+                    <img src='https://opal.google/board/blobs/05d59233-7f59-407b-9d93-32a4d641e78a' alt='Tai Tzu Ying Infographic' class="w-full object-cover rounded-xl border border-white/10" />
+                </div>
+            </div>
+
+            <!-- Stats 1 -->
+            <div class="md:col-span-1 glass rounded-3xl p-8 bento-card flex flex-col justify-center items-center text-center">
+                <div class="text-5xl font-black text-brand-accent mb-2">214</div>
+                <div class="text-sm uppercase tracking-widest text-slate-400">Weeks at No. 1</div>
+            </div>
+
+            <!-- Stats 2 -->
+            <div class="md:col-span-1 glass rounded-3xl p-8 bento-card flex flex-col justify-center items-center text-center">
+                <div class="text-5xl font-black text-brand-gold mb-2">4</div>
+                <div class="text-sm uppercase tracking-widest text-slate-400">BWF Finals Titles</div>
+            </div>
+
+            <!-- Stats 3 -->
+            <div class="md:col-span-2 glass rounded-3xl p-8 bento-card">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-brand-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    核心成就
+                </h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-brand-dark/40 p-4 rounded-xl border border-white/5">
+                        <div class="text-xs text-brand-accent mb-1">全英賽</div>
+                        <div class="font-bold">3座冠軍</div>
+                    </div>
+                    <div class="bg-brand-dark/40 p-4 rounded-xl border border-white/5">
+                        <div class="text-xs text-brand-accent mb-1">奧運</div>
+                        <div class="font-bold">東京奧運銀牌</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Video Section -->
+    <section class="bg-slate-900/50 py-24 relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-display mb-4">傳奇時刻：球場魔術師</h2>
+                <p class="text-slate-400">展示其標誌性的假動作技術與職業生涯「最後舞曲」的謝幕氛圍</p>
+            </div>
+            
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-brand-gold rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <div class="relative glass rounded-[1.5rem] p-2 overflow-hidden shadow-2xl">
+                    <video src='https://opal.google/board/blobs/32b224cb-956f-4b30-8da9-d81f9757c05c' controls class="rounded-2xl"></video>
+                </div>
+            </div>
+
+            <div class="mt-16 max-w-2xl mx-auto">
+                <div class="glass p-6 rounded-2xl flex flex-col gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-brand-accent/20 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">完整背景音樂</h4>
+                            <p class="text-sm text-slate-400">適合用於更長版本的編輯（管弦樂）</p>
+                        </div>
+                    </div>
+                    <audio src='https://opal.google/board/blobs/09f4a32b-566c-4062-94c3-295e79e2672b' controls class="h-10"></audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Report Section -->
+    <section class="max-w-4xl mx-auto px-6 py-24 leading-relaxed">
+        <div class="mb-16">
+            <h2 class="text-4xl font-black font-display mb-8 text-center">戴資穎冠軍之路研究報告</h2>
+            <div class="w-20 h-1 bg-brand-accent mx-auto"></div>
+        </div>
+
+        <div class="space-y-16 text-slate-300">
+            <!-- Milestone -->
+            <article>
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-4">
+                    <span class="text-brand-accent text-sm font-display px-2 py-1 border border-brand-accent rounded">01</span>
+                    職業生涯重要里程碑
+                </h3>
+                <p class="mb-6">戴資穎的職業生涯是台灣羽球壇的里程碑。她於2009年正式進入國際賽事，並在2011年以16歲之齡於美國羽球黃金大獎賽奪冠，展現巨大潛力。</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-brand-accent">
+                        <strong class="text-white block mb-2">世界第一紀錄</strong>
+                        2016年首次登頂，累積在位時間達214週，成為BWF歷史上紀錄最久的女子單打球員。
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-brand-gold">
+                        <strong class="text-white block mb-2">大賽成就</strong>
+                        三度奪得全英公開賽冠軍，並在2018年亞運奪得台灣史上首面羽球女單金牌。
+                    </div>
+                </div>
+            </article>
+
+            <!-- Style -->
+            <article>
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-4">
+                    <span class="text-brand-accent text-sm font-display px-2 py-1 border border-brand-accent rounded">02</span>
+                    球風特色
+                </h3>
+                <div class="space-y-4">
+                    <div class="group border-b border-white/10 pb-4">
+                        <h4 class="text-brand-accent font-bold mb-1">假動作技術 (Deception)</h4>
+                        <p>這是核心技術。利用極強手腕力量與隱蔽性高的揮拍動作，使對手產生判斷錯誤。</p>
+                    </div>
+                    <div class="group border-b border-white/10 pb-4">
+                        <h4 class="text-brand-accent font-bold mb-1">網前技術 (Net Play)</h4>
+                        <p>網前搓球與勾球角度極其刁鑽，能有效控制比賽節奏。</p>
+                    </div>
+                    <div class="group border-b border-white/10 pb-4">
+                        <h4 class="text-brand-accent font-bold mb-1">體能與步法 (Footwork)</h4>
+                        <p>擁有卓越的核心肌群實力與多向移動步法，大範圍跑動中仍精準擊球。</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recent -->
+            <article class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-4">
+                    <span class="text-brand-accent text-sm font-display px-2 py-1 border border-brand-accent rounded">03</span>
+                    近期表現與職業生涯末期
+                </h3>
+                <p class="mb-4">2023年年終總決賽，戴資穎在落後下逆轉戰勝安洗瑩奪冠，展現巔峰韌性。然而2024年受膝傷困擾，即便如此仍堅持在巴黎奧運謝幕，展現運動家精神。</p>
+            </article>
+
+            <!-- Conclusion -->
+            <div class="bg-brand-accent/10 border border-brand-accent/20 p-10 rounded-[2.5rem] text-center italic text-slate-200">
+                <p class="text-xl leading-loose">
+                    「戴資穎的『冠軍之路』不僅體現在獎牌數量，更在於她定義了一種獨特的羽球美學。她突破了防守為主的傳統，將技術多樣性提升到了新的高度。」
+                </p>
+            </div>
+        </div>
+
+        <!-- References -->
+        <div class="mt-20 pt-10 border-t border-white/10">
+            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">引用文獻來源</h4>
+            <ul class="text-xs space-y-3 text-slate-500 font-light">
+                <li>BWF World Rankings - Tai Tzu-ying Profile. <a href="https://bwfbadminton.com/player/25138/tai-tzu-ying" target="_blank" class="text-brand-accent hover:underline">Link</a></li>
+                <li>中央通訊社：戴資穎傳奇職涯回顧，細數球后紀錄與生涯轉折。<a href="https://www.cna.com.tw/news/aspt/202407310022.aspx" target="_blank" class="text-brand-accent hover:underline">Link</a></li>
+                <li>Olympics Official - Tai Tzu-ying: Career highlights. <a href="https://olympics.com/en/news/tai-tzu-ying-badminton-record-career-highlights" target="_blank" class="text-brand-accent hover:underline">Link</a></li>
+                <li>Yahoo Sports TW：2023 BWF年終總決賽深度分析。<a href="https://tw.news.yahoo.com/tai-tzu-ying-bwf-finals-2023-victory-analysis.html" target="_blank" class="text-brand-accent hover:underline">Link</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Project Footer -->
+    <div class="py-16 mt-10 border-t border-white/5 text-center bg-brand-dark/80 backdrop-blur-md">
+        <div class="max-w-2xl mx-auto">
+            <p class="text-slate-400 text-sm mb-2">學號：M11408915</p>
+            <h3 class="text-xl font-medium">
+                【主題探索報告】by <span class="italic text-brand-red font-bold">NTUST Mia</span>
+            </h3>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="fixed bottom-10 right-10 z-50 animate-float hidden md:block">
+        <div class="w-1 h-12 bg-gradient-to-b from-brand-accent to-transparent rounded-full opacity-50"></div>
+    </div>
+
+</body>
+</html>

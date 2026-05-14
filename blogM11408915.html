@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幕後的鬼故事女王：小泉節子的傳奇人生</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Zhi+Mang+Xing&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lily: {
+                            deep: '#1A2F38',    // Deep Monet green-blue
+                            pond: '#3E5C6B',    // Muted water blue
+                            petal: '#E8D5E5',   // Soft lily pink
+                            leaf: '#4A6346',    // Impressionist green
+                            mist: '#F0F4F8',    // Ethereal morning mist
+                            accent: '#D4AF37'   // Subtle gold leaf
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Zhi Mang+Xing', 'cursive'],
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.5s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7f9fa;
+            color: #2c3e50;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+
+        /* Monet-inspired Gradient Background */
+        .monet-bg {
+            background: linear-gradient(135deg, #eef2f3 0%, #dbe9f4 50%, #e8d5e5 100%);
+            background-attachment: fixed;
+        }
+
+        /* Brush Stroke Detail */
+        .brush-underline {
+            position: relative;
+            display: inline-block;
+        }
+        .brush-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: rgba(74, 99, 70, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .drop-cap::first-letter {
+            font-family: 'Zhi Mang Xing', cursive;
+            float: left;
+            font-size: 4rem;
+            line-height: 0.8;
+            padding-right: 8px;
+            color: #3E5C6B;
+        }
+
+        .media-container img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            filter: brightness(0.9) contrast(1.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .media-container:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3E5C6B;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="monet-bg font-sans leading-relaxed">
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Decorative "Water Lily" blurred circles -->
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-lily-petal/20 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-lily-pond/10 rounded-full blur-3xl animate-float"></div>
+        </div>
+
+        <div class="relative z-10 w-full max-w-5xl mx-auto text-center space-y-8">
+            <div class="animate-fade-in inline-block px-4 py-1 rounded-full border border-lily-pond text-lily-pond font-semibold tracking-widest text-sm uppercase mb-4">
+                Literature & Legend
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-black text-lily-deep font-serif leading-tight tracking-tight">
+                幕後的<span class="text-lily-pond italic">鬼故事女王</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-lily-pond/80 font-light max-w-2xl mx-auto italic">
+                不只是「怪談作家之妻」！揭開小泉節子的傳奇人生
+            </p>
+
+            <div class="media-container mt-12 animate-fade-in" style="animation-delay: 0.3s;">
+                <img src='https://opal.google/board/blobs/850cf273-d97a-4ec8-9794-c8bc8806eece' alt='Monet Inspired Banner' class="shadow-2xl border-4 border-white" />
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-lily-pond">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-24">
+        
+        <!-- Intro Section -->
+        <section class="glass-card p-8 md:p-16 rounded-[40px] relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-lily-leaf/30"></div>
+            <h2 class="text-3xl font-bold text-lily-deep mb-8 flex items-center gap-3">
+                <span class="text-4xl">🌟</span> 前言：這部晨間劇必追！
+            </h2>
+            <div class="prose prose-lg text-slate-700 font-serif leading-loose">
+                <p class="drop-cap">
+                    如果你也是日劇迷，或者對日本神祕文化情有獨鍾，那麼 2025 年秋季你絕對不能錯過 NHK 的晨間小說連續劇《ばけばけ》（暫譯：怪談作家之妻）。
+                </p>
+                <p class="mt-6">
+                    這部作品並非單純的跨國羅曼史，它將鏡頭對準了明治時期一位看似平凡卻極其韌性的女性——<span class="brush-underline font-bold">小泉節子</span>。為什麼在一百多年後的今天，這位「文豪背後的女人」會突然躍升為大眾關注的核心？我想，這不僅僅是因為她與知名作家小泉八雲（Lafcadio Hearn）那段傳奇的婚姻，更是因為在那些令人背脊發涼的《雪女》、《無耳芳一》背後，藏著一顆屬於節子的、充滿文學洞見的心靈。
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1 -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div class="md:col-span-4 sticky top-10">
+                <div class="p-6 bg-lily-leaf/10 rounded-3xl border-l-4 border-lily-leaf">
+                    <h3 class="text-2xl font-black text-lily-leaf font-serif">1891</h3>
+                    <p class="text-sm text-lily-leaf/70 uppercase tracking-widest mt-2">The Meeting in Matsue</p>
+                </div>
+            </div>
+            <div class="md:col-span-8 space-y-6">
+                <h2 class="text-3xl font-bold text-lily-deep font-serif leading-snug">
+                    📜 一、 跨國戀的最高境界：語言不通也能寫出經典？
+                </h2>
+                <div class="text-lg text-slate-700 font-serif space-y-4">
+                    <p>故事要從 1891 年的島根縣松江市說起。一位是出身沒落武士家族、正經歷人生低潮的節子；另一位則是跨越半個地球、四處漂泊的希臘裔愛爾蘭作家赫恩。兩人的相遇，簡直是文化碰撞的極致。</p>
+                    <div class="bg-white/50 p-6 rounded-2xl border-dashed border-2 border-lily-pond/30 my-8">
+                        <p class="italic text-lily-pond font-bold">「赫恩語」 (Hearn-go)</p>
+                        <p class="text-sm mt-2">這種混合了破碎日文與簡單英文的獨特語言，不僅成了他們談情說愛的橋樑，更成了日本文學史上的重要工具。</p>
+                    </div>
+                    <p>節子成了赫恩的「眼睛」與「耳朵」。在那個交通不便、資訊閉塞的年代，節子憑藉著紮實的民俗底蘊，將鄉間流傳的怪異傳說一一口述給丈夫聽。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Producer View -->
+        <section class="relative">
+            <div class="absolute -inset-4 bg-lily-petal/10 rounded-[50px] -z-10 transform rotate-1"></div>
+            <div class="glass-card p-10 md:p-16 rounded-[40px]">
+                <h2 class="text-3xl font-bold text-lily-deep mb-10 font-serif flex items-center gap-4">
+                    <span class="bg-lily-pond text-white p-2 rounded-lg text-xl">🕵️</span> 
+                    二、 誰才是真正的作者？隱形的「怪談製作人」
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="text-slate-700 font-serif space-y-4">
+                        <p>在過去的文學史敘事中，節子往往被簡化為照顧文豪生活的「賢內助」。但現代學者開始大膽翻案：節子不只是附屬品，她根本就是小泉八雲文學世界的<span class="text-lily-leaf font-bold">「靈魂協力者」</span>。</p>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-slate-700 font-serif">從現代的視角來看，節子其實扮演了類似「製作人」或「選書人」的角色。她並非隨便說說故事，而是運用她敏銳的文學品味，精準地挑選出具有美學價值的內容。</p>
+                    </div>
+                </div>
+                <div class="mt-10 pt-10 border-t border-lily-pond/10 italic text-center text-lily-pond/70">
+                    「如果沒有節子的『品味過濾』，作品極可能淪為外國人眼中的獵奇報導。」
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Controversy -->
+        <section class="space-y-8">
+            <div class="flex items-center gap-6">
+                <div class="h-px flex-1 bg-gradient-to-r from-transparent via-lily-pond/30 to-transparent"></div>
+                <h2 class="text-3xl font-bold text-lily-deep font-serif px-4">🤔 三、 那些被藏起來的小秘密</h2>
+                <div class="h-px flex-1 bg-gradient-to-r from-transparent via-lily-pond/30 to-transparent"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow">
+                    <div class="text-lily-pond font-bold text-xl mb-4">東方主義</div>
+                    <p class="text-slate-600 text-sm font-serif">赫恩的作品是否將日本怪談過於「浪漫化」或「他者化」了？而在這種「西方凝視」中，節子的貢獻往往被隱形。</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow md:translate-y-4">
+                    <div class="text-lily-pond font-bold text-xl mb-4">翻譯蒟蒻</div>
+                    <p class="text-slate-600 text-sm font-serif">從節子的口述到赫恩的英文，再翻譯回日文。這多重轉譯過程中，最原始的味道是否被「精製化」了？</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow">
+                    <div class="text-lily-pond font-bold text-xl mb-4">文化導師</div>
+                    <p class="text-slate-600 text-sm font-serif">她不僅要負擔沉重的家務，還得擔任田野調查員、口譯員與文化導師。她是跨越邊界的橋樑。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Future -->
+        <section class="bg-lily-deep text-white p-10 md:p-20 rounded-[60px] overflow-hidden relative">
+            <div class="absolute top-0 right-0 p-20 opacity-10 pointer-events-none">
+                <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+            
+            <div class="relative z-10 max-w-2xl">
+                <h2 class="text-4xl font-black font-serif mb-8 flex items-center gap-4">
+                    🚀 四、 下一站：鬼故事發源地
+                </h2>
+                <div class="space-y-6 text-lily-mist/80 text-lg font-light leading-relaxed">
+                    <p>隨著電視劇的開播，我們預見這股「怪談熱潮」將會帶來一波文化轉型。</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <span class="text-lily-accent">✦</span>
+                            <span><strong>聖地巡禮：</strong>島根縣松江市即將成為最強打卡點，古老傳說與 AR/VR 技術重塑體驗。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-lily-accent">✦</span>
+                            <span><strong>跨文化範本：</strong>節子與八雲的故事，在今日全球化背景下，提醒我們文化傳承應是多元且雙向的。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="text-center space-y-8 py-10">
+            <div class="inline-block h-1 w-20 bg-lily-pond/20 mb-8"></div>
+            <h2 class="text-4xl font-serif text-lily-deep">結語</h2>
+            <p class="text-xl text-slate-700 font-serif max-w-2xl mx-auto leading-relaxed">
+                每個出色的靈魂背後，往往都有一個更懂他的故事說書人。小泉節子用她的溫柔與智慧，將古老的口語傳統轉化成了不朽的文學遺產。
+            </p>
+            <p class="text-lily-pond font-medium italic">
+                下一次當你翻開《怪談》時，別忘了那位在燈火下，用「赫恩語」細訴著幽魂往事的勇敢女性。
+            </p>
+        </section>
+
+        <!-- Interaction Area -->
+        <section class="glass-card rounded-[40px] p-12 text-center border-2 border-lily-petal">
+            <h3 class="text-2xl font-bold text-lily-deep mb-6">💬 互動時間</h3>
+            <p class="text-slate-600 mb-8">在眾多的日本怪談中，你最喜歡或最害怕的是哪一個？<br>是冰冷的雪女，還是無耳的芳一？</p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-8 py-3 rounded-full bg-lily-pond text-white font-semibold hover:bg-lily-deep transition-all transform hover:-translate-y-1 shadow-lg">
+                    分享我的想法
+                </button>
+                <button class="px-8 py-3 rounded-full border-2 border-lily-pond text-lily-pond font-semibold hover:bg-lily-pond/5 transition-all">
+                    閱讀更多怪談
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Decorative background elements -->
+    <div class="fixed top-0 right-0 -z-50 pointer-events-none opacity-20">
+        <svg width="400" height="400" viewBox="0 0 200 200">
+            <defs>
+                <filter id="blur">
+                    <feGaussianBlur stdDeviation="5" />
+                </filter>
+            </defs>
+            <circle cx="100" cy="100" r="80" fill="url(#grad)" filter="url(#blur)"/>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#E8D5E5;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3E5C6B;stop-opacity:1" />
+            </linearGradient>
+        </svg>
+    </div>
+
+</body>
+</html>
